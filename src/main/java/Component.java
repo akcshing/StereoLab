@@ -1,4 +1,4 @@
-public abstract class Component {
+public abstract class Component implements IPlay{
 
     private String make;
     private String model;
@@ -23,4 +23,6 @@ public abstract class Component {
     public void setModel(String newModel){
         this.model = newModel;
     }
+
+    public abstract String play();
 }

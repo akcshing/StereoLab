@@ -26,5 +26,13 @@ public class Stereo {
         this.components.remove(oldComponent);
     }
 
+    public void playComponentByModel(String model) {
+        for (Component component : this.components) {
+            if (component.getModel() == model) {
+                component.play();
+            }
+        }
+    }
+
 
 }
