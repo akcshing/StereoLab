@@ -45,4 +45,10 @@ public class RadioTest {
         radio.setModel("MXD2000");
         assertEquals("MXD2000", radio.getModel());
     }
+
+    @Test
+    public void canPlay(){
+        radio.tune("Radio 1");
+        assertEquals("Playing Radio 1", radio.play());
+    }
 }

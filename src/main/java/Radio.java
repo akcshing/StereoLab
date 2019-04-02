@@ -1,4 +1,4 @@
-public class Radio extends Component{
+public class Radio extends Component implements IPlay{
 
     private String station;
 
@@ -13,5 +13,9 @@ public class Radio extends Component{
 
     public void tune(String newStation){
         this.station = newStation;
+    }
+
+    public String play(){
+        return "Playing " + this.station;
     }
 }
